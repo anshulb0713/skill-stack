@@ -10,7 +10,11 @@ Works with **Claude Code** (primary) and **OpenAI Codex CLI**.
 
 Open Claude Code and paste the prompt below. Claude clones the repo, runs setup, and registers all skills.
 
-> Install skill-stack: run `git clone --depth 1 https://github.com/anshulb0713/skill-stack.git ~/.claude/skills/skill-stack && cd ~/.claude/skills/skill-stack && ./setup`, then add a "skill-stack" section to CLAUDE.md that says to use the `/browse` skill for all web browsing and lists the available skills: `/office-hours`, `/plan-eng-review`, `/plan-design-review`, `/review`, `/design-shotgun`, `/qa-only`, `/browse`.
+> Install skill-stack:
+> 1. Run `git clone --depth 1 https://github.com/anshulb0713/skill-stack.git ~/.claude/skills/skill-stack && cd ~/.claude/skills/skill-stack && ./setup`.
+> 2. Verify the install by running `ls ~/.claude/skills/` — you should see individual directories for `office-hours`, `plan-eng-review`, `plan-design-review`, `review`, `design-shotgun`, `qa-only`, and `browse` alongside `skill-stack`. If you only see `skill-stack` and nothing else, setup did not finish — STOP and report the error from the previous step instead of continuing.
+> 3. Only after the verify step passes, add a "skill-stack" section to CLAUDE.md that says to use the `/browse` skill for all web browsing and lists the available skills: `/office-hours`, `/plan-eng-review`, `/plan-design-review`, `/review`, `/design-shotgun`, `/qa-only`, `/browse`.
+> 4. Tell me to restart Claude Code — the new slash commands only appear after a restart.
 
 ### Option 2 — run it yourself
 
